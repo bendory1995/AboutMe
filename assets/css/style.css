@@ -1,0 +1,54 @@
+img{
+    float: left;
+    margin-right: 15px;
+}
+p2{
+    margin-top: 15px;
+}
+h2{
+    color: teal;
+}
+.row{
+    background: darkgray;
+}
+.col-1{
+    background: darkgray;
+}
+.col-3{
+    background: darkgray;
+}
+.col-8{
+    padding: 10px;
+}
+html, body{
+    min-height: 100%;
+    margin: 0;
+    background: darkgray;
+}
+.footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background: gray;
+    text-align: center;
+}
+.col-sm-6{
+    background: white;
+    padding: 5px;
+}
+h3{
+    background: turquoise;
+    text-align: center;
+    color: navy;
+    padding: 3px;
+
+}
+h{
+    color: gray;
+}
+.btn{
+    margin-top: 5px;
+}
+.form-group{
+    color: gray;
+}
