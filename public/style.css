@@ -86,3 +86,37 @@ h{
 .tempText{
     color:black;
 }
+.second-page{
+    padding-top: 550px;
+}
+.third-page{
+    padding-top: 30px;
+}
+h3{
+    text-align: center;
+    color:black;
+    font-family: 'Indie Flower', cursive;
+    
+}
+
+h4{
+    text-align: left;
+    color: white;
+    background-color:black;
+    padding: 3px;
+
+}
+
+.text-block-pic{
+    position: absolute;
+    background-color: white;
+    color: black;
+}
+
+.background{
+    background: url(./images/background2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
