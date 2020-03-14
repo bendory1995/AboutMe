@@ -1,4 +1,4 @@
-img{
+/* img{
     float: left;
     margin-right: 15px;
 }
@@ -51,4 +51,28 @@ h{
 }
 .form-group{
     color: gray;
+} */
+/* div{
+    height: 100vh;
+} */
+.rowResume{
+    height: 100vh;
 }
+.container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    bottom: 50%;
+    left: 30%;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .welcomeTypeWrite{
+    text-align: center;
+    color:#fff;
+  }
+  * { color:#fff; text-decoration: none;}
