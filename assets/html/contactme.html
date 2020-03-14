@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Alex Oh</title>
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,7 +17,7 @@
             /* Set the size of the div element that contains the map */
            #map {
              height: 400px;  /* The height is 400 pixels */
-             width: 50%;  /* The width is the width of the web page */
+             width: 100%;  /* The width is the width of the web page */
             }
          </style>
 </head>
@@ -46,10 +46,54 @@
             </ul>
         </div>
     </nav>
-    
-    <h3>My Location</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <!-- where information goes -->
+            <div class="col-10">
+                <div class="card" style="width: 100%">
+                    <!-- card to create a white box-->
+                    <div class="card-body">
+                        <h2 class="card-title">Contact Me</h2>
+                        <hr>
+                        <!-- 3 rows for the portfolios-->
+                        <div class="row">
+                            <div class="col-sm-6" style="width: 100%">
+                                <form>
+                                    <div class ="form-group">
+                                        <label for ="inputName">Name</label>
+                                        <input type="name" class = "form-control" id="inputName"
+                                        placeholder="Name">
+                                    </div>
+                                    <div class ="form-group">
+                                        <label for ="inputEmail">Email</label>
+                                        <input type="email" class = "form-control" id="inputEmail"
+                                        placeholder="Email">
+                                    </div>
+                                    <div class ="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" rows="5" id = "message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-dark">Submit</button>
+
+                                </form>
+                            </div>
+                            <div class="col-sm-6">
+                                <!--The div element for the map -->
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+    </div>
+
     <script>
 // Initialize and add the map
 function initMap() {
