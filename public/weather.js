@@ -1,29 +1,20 @@
 
-'use strict';
 
-const API_KEY = 'd2f10ea773ba94e3852b6e5e29c7691f';
+function initializeWeather(){
+    $.ajax({
+        url: "https://api.openweathermap.org/data/2.5/weather?q=lake+mary,florida&appid=d2f10ea773ba94e3852b6e5e29c7691f",
+        method: "GET",
+    }).then(function(response){
+        console.log(response);
+        var temp = response.main.temp;
+        console.log(temp);
+        var fahrenheit = (temp-273.15)*(9/5)+32;
+        console.log(fahrenheit);
 
-const request = async url => {
-    const reponse = await fetch(url);
-    return response.ok ? response.json() : Promise.reject({error: 500});
+        var f = Math.floor(fahrenheit);
+        console.log(f);
+        $("#temp").text(f);
+    });
 };
 
-const getWeatherInfo = async ( element, form ) => {
-    try {
-        const q = form.querySelector('#q').value;
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${q}&appid=${API_KEY}`;
-        const response = await request(url);
-        element.innerText = JSON.stringify(response);
-
-    } catch(err) {
-        console.log(err);
-    }
-};
-
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('#form');
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        getWeatherInfo(document.querySelector('#results'), form);
-    }, false);
-});
+initializeWeather();

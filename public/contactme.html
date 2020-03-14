@@ -23,6 +23,8 @@
              width: 100%;  /* The width is the width of the web page */
             }
          </style>
+         <script src="https://code.jquery.com/jquery.js"></script>
+
 </head>
 
 
@@ -49,10 +51,6 @@
             </ul>
         </div>
     </nav>
-    <div class ="weatherContainer">
-        <p id= "temperature-view"></p>
-
-    </div>
 
     <div class="container-fluid">
         <div class="row">
@@ -88,6 +86,9 @@
                                 </form>
                             </div>
                             <div class="col-sm-6">
+                                <div class="temp-container">
+                                    <h class="tempText" >Current Lake Mary Temperature: <span id="temp"></span> &#8457; </h>
+                                  </div>
                                 <!--The div element for the map -->
                                 <div id="map"></div>
                             </div>
